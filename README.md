@@ -17,8 +17,9 @@ Var name | Description | Required?
 
 ## Running
 
+(Remember to supply all the correct environment variables)
 ```bash
-$ docker run -itu0
+$ docker run -itu0 docker pull ghcr.io/akeboshiwind/rss-filter:latest
 ```
 
 ## Development
