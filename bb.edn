@@ -1,0 +1,6 @@
+{:tasks
+ {dev:repl {:doc "Start a dev repl"
+            :task (shell "clj -A:dev -M:repl/conjure")}
+
+  build {:doc "Build an uberjar"
+         :task (shell "clj -T:build uber")}}}
