@@ -34,4 +34,5 @@ $ bb dev:repl
 
 ## Release
 
-Releases are controlled by commits to `master` using github actions.
+Releases are controlled by tags.
+Push a tag with `vX.Y.Z` to release a new container.
