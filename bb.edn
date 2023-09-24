@@ -2,5 +2,8 @@
  {dev:repl {:doc "Start a dev repl"
             :task (shell "clj -A:dev -M:repl/conjure")}
 
+  docker:build {:doc "Build an uberjar"
+                :task (shell "docker build -t rss-filter .")}
+
   build {:doc "Build an uberjar"
          :task (shell "clj -T:build uber")}}}
