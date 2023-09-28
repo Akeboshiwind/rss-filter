@@ -3,6 +3,8 @@
 
 (def ITEM #(= :item (:tag %)))
 
-(def TITLE
-  [:content (s/filterer #(= :title (:tag %))) s/FIRST
+(def TITLE #(= :title (:tag %)))
+
+(def ITEM-TITLE
+  [:content (s/filterer TITLE) s/FIRST
    :content s/FIRST])

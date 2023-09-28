@@ -7,7 +7,7 @@
    :content s/ALL
    u/ITEM
    (s/not-selected?
-     u/TITLE
+     u/ITEM-TITLE
      #(re-matches #".*[cC]ortex.*" %))])
 
 (defn filterer [feed]
