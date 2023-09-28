@@ -29,3 +29,16 @@
        (s/setval NOT-CORTEX-ITEM s/NONE)
        (s/setval FEED-TITLE "Cortex Crossover")
        (s/setval FEED-DESCRIPTION "RelayFM Crossover Feed, filtered for only Cortex episodes by rss-feed.")))
+
+(comment
+  (def url "")
+  (def data (-> url slurp clojure.data.xml/parse-str))
+
+  (->> data
+       #_
+       (s/select [:content s/ALL
+                  :content s/ALL
+                  u/TITLE
+                  :content
+                  s/FIRST])
+       filterer))
